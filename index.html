@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Neonderthaw&display=swap"
+      rel="stylesheet"
+    />
+    <title>FoodCort</title>
+  </head>
+  <body>
+    <div class="loader active">
+      <img src="img/loader.png" alt="" />
+    </div>
+    <section class="section main active">
+      <div class="search">
+        <input
+          type="text"
+          name="search"
+          placeholder="основной ингридиент..."
+          id="search-inp"
+        />
+        <button class="searchBtn">Поиск</button>
+      </div>
+      <div class="getRandomMeal">
+        <button class="getRandomMealBtn">Случайный рецепт</button>
+      </div>
+      <div class="error">
+        <img class="error-img cheef" src="img/baker.png" alt="">
+        <img class="error-img err" src="img/warning.png" alt="">
+        <p class="error__text">
+             Что-то пошло не так!
+        </p>
+  </div>
+    </section>
+    <!-- block random meal and checked user meal -->
+    <div class="section showMeal">
+      <div class="food">
+        <img class="food-img" src="" alt="" />
+        <div class="food-content">
+          <h1 class="food-content__name"></h1>
+          <p class="food-content__description"></p>
+          <div class="food-content__ingridients">
+            <h2 class="food-content__ingridients-title"></h2>
+            <div class="list__wrapper">
+              <ul class="ingridiet__list"></ul>
+              <ul class="measure__list"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- block search meals -->
+    <div class="section showSearchMeal"></div>
+
+
+
+
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
